@@ -1,5 +1,4 @@
-#Multithreaded Air Traffic Control System
-
+AirTrafficControlSystem
 Entities: Plane (Process): Passenger (with passengers, crew) or Cargo (with pilots). Airport (Process): Multi-threaded. Air Traffic Controller (Process): Single-threaded. Passenger (Process): Child of Passenger Plane. Cleanup (Process): Single-threaded. Tasks:
 
 Plane Program (plane.c): Create separate plane processes. User inputs: Plane ID, Type (1 for Passenger, 0 for Cargo). For Passenger Planes: Input occupied seats, luggage weight, and body weight. For Cargo Planes: Input cargo items and average weight. Store details: Departure and arrival airports, plane ID, total weight, type, number of passengers. Communicate with the Air Traffic Controller.
